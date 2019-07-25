@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     private void displayProductListFragment() {
         getSupportFragmentManager().beginTransaction().
                 replace(mBinding.container.getId(), new ProductListFragment(), FRAGMENT_TAG)
-                .addToBackStack(FRAGMENT_TAG).
-                commit();
+                .commit();
     }
 }
